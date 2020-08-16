@@ -1,4 +1,12 @@
+import './ImageList.css'
 import React from "react";
+// ...................
+// 3. Using the styles and message variable
+// https://www.samanthaming.com/tidbits/40-colorful-console-message/
+const styles = ['color: green', 'background: yellow'].join(';');
+const message = 'I am so happy to see you are here!';
+console.log('%c%s', styles, message);
+// ...................
 
 export const ImageList = (props) => {
   // console.log(props.images);
@@ -9,5 +17,5 @@ export const ImageList = (props) => {
   })
   
 
-  return <div>{images}</div>;
+  return <div className="image-list">{images}</div>;
 };
