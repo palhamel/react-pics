@@ -15,10 +15,9 @@
 
 
 ## View it live
-https://zen-lamarr-e99afc.netlify.app/
+https://boring-lovelace-818beb.netlify.app/
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/303e0902-ca3b-4938-a17e-bd2f05bbf017/deploy-status)](https://app.netlify.com/sites/zen-lamarr-e99afc/deploys)
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/33b5be52-9217-4090-a88a-1fed94ce2a67/deploy-status)](https://app.netlify.com/sites/boring-lovelace-818beb/deploys)
 
 
 
