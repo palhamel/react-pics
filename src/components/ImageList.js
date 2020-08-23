@@ -2,11 +2,16 @@ import './ImageList.css'
 import React from "react";
 import {ImageCard} from './ImageCard'
 // ...................
-// 3. Using the styles and message variable
-// https://www.samanthaming.com/tidbits/40-colorful-console-message/
+
 const styles = ['color: green', 'background: yellow'].join(';');
 const message = 'I am so happy to see you are here!';
 console.log('%c%s', styles, message);
+
+const styles2 = ['color: pink', 'background: #363434', 'font-size: 24px', 'border: dotted 1px red', 'padding: 10px', 'margin: 20px'].join(';');
+const message2 = 'WE ARE THE ROBOTS';
+console.log('%c%s', styles2, message2);
+// 3. Using the styles and message variable
+// https://www.samanthaming.com/tidbits/40-colorful-console-message/
 // ...................
 
 export const ImageList = (props) => {
@@ -23,8 +28,6 @@ export const ImageList = (props) => {
 
 
 /*
-
-
 export const ImageList = (props) => {
   // console.log(props.images);
 
@@ -37,8 +40,4 @@ export const ImageList = (props) => {
 
   return <div className="image-list">{images}</div>;
 };
-
-
-
-
 */

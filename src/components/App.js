@@ -1,22 +1,19 @@
 import React from "react";
-import unsplash from '../api/unsplash'
+import unsplash from "../api/unsplash";
 import { SearchBar } from "./SearchBar";
-import { ImageList } from './ImageList'
+import { ImageList } from "./ImageList";
 
 export class App extends React.Component {
-  state = { images: [] }
-
+  state = { images: [] };
 
   onSearchSubmit = async (term) => {
     // console.log('from App comp:', term)
-    const response = await unsplash
-      .get("/search/photos", {
-        params: { query: term },
-      });
+    const response = await unsplash.get("/search/photos", {
+      params: { query: term },
+    });
 
-    this.setState({ images: response.data.results}) 
-  } 
- 
+    this.setState({ images: response.data.results });
+  };
 
   render() {
     return (
@@ -29,7 +26,6 @@ export class App extends React.Component {
 }
 
 /* 
-
 onSearchSubmit(term) {
     // console.log('from App comp:', term)
     axios
@@ -53,5 +49,4 @@ export const App = () => {
     </div>
   );
 };
-
 */
